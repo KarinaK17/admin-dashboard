@@ -1,293 +1,294 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
 }
 
 .container {
-    display: grid;
-    grid-template: repeat(2, fit-content) / repeat(2, fit-content);
+  display: grid;
+  grid-template: repeat(2, fit-content) / repeat(2, fit-content);
 }
 
 .header {
-    grid-area: 1/2/2/3;
-    background-color: rgb(255, 255, 255);
-    display: grid;
-    grid-template: 1fr 1.5fr / 2fr 1fr;
-    padding: 20px;
-    gap: 5px 25px;
+  grid-area: 1/2/2/3;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template: 1fr 1.5fr / 2fr 1fr;
+  padding: 20px;
+  gap: 5px 25px;
 }
 
 .sidebar {
-    grid-area: 1/1/3/2;
-    background-color: rgb(130, 15, 161);
-    display: grid;
-    padding: 20px;
-    align-content: start;
-    gap: 40px;
+  grid-area: 1/1/3/2;
+  background-color: rgb(130, 15, 161);
+  display: grid;
+  padding: 20px;
+  align-content: start;
+  gap: 40px;
 }
 
 .content-container {
-    grid-area: 2/2/3/3;
-    background-color:rgb(244, 242, 247);
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    padding: 20px;
-    gap: 30px;
-    box-shadow: inset 0 3px 5px rgb(175, 175, 175);
+  grid-area: 2/2/3/3;
+  background-color: rgb(244, 242, 247);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 20px;
+  gap: 30px;
+  box-shadow: inset 0 3px 5px rgb(175, 175, 175);
 }
 
 .searchbar {
-    display:flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .magnifying-glass img {
-    height: 1.8rem;
+  height: 1.8rem;
 }
 
 input {
-    flex: auto;
-    appearance: none;
-    font-size: 1.3rem;
-    border-radius: 15px;
-    padding: 2px 8px;
-    border: none;
-    outline: none;
-    background-color: rgb(211, 211, 211);
+  flex: auto;
+  appearance: none;
+  font-size: 1.3rem;
+  border-radius: 15px;
+  padding: 2px 8px;
+  border: none;
+  outline: none;
+  background-color: rgb(211, 211, 211);
 }
 
 .profile-right {
-    display:flex;
-    justify-content: end;
-    align-items: center;
-    gap: 10%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10%;
 }
 
 .profile-right img:first-of-type {
-    height: 1.8rem;
+  height: 1.8rem;
 }
 
 .profile-right img:last-of-type {
-    height: 3rem;
+  height: 3rem;
 }
 
 .profile-right p {
-    font-size: clamp(1vw, 1.3em, 2rem);
-    font-weight: bold;
+  font-size: clamp(1vw, 1.3em, 2rem);
+  font-weight: bold;
 }
 
-.greeting{
-    display:flex;
-    gap: 2%;
-    align-items: center;
+.greeting {
+  display: flex;
+  gap: 2%;
+  align-items: center;
 }
 
 .greeting img {
-    height: 5rem;
+  height: 5rem;
 }
 
 .greeting p {
-    font-size: 1rem;
-    font-weight: bold;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .greeting p span {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .buttons {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 button {
-    appearance: none;
-    padding: 10px 20px;
-    border-radius: 1.3em;
-    font-size: clamp(1rem, 1vw, 2rem);
-    background-color: rgb(130, 15, 161);
-    color: white;
+  appearance: none;
+  padding: 10px 20px;
+  border-radius: 1.3em;
+  font-size: clamp(1rem, 1vw, 2rem);
+  background-color: rgb(130, 15, 161);
+  color: white;
 }
 
-.dashboard p{
-    background-image: url(svg/dashboard-svgrepo-com.svg);
-    padding: 10px 0 10px 3.5rem;
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 3rem;
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    /* align-self: center; */
+.dashboard p {
+  background-image: url(svg/dashboard-svgrepo-com.svg);
+  padding: 10px 0 10px 3.5rem;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  /* align-self: center; */
 }
 
 .sidebar li {
-    padding: 10px 0 10px 2.5rem;
-    list-style: none;
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 2rem;
-    font-size: 1.3rem;
-    font-weight: bold;
-    color:white;
-    }
+  padding: 10px 0 10px 2.5rem;
+  list-style: none;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+}
 
 .home {
-    background-image: url(svg/home_white_24dp.svg);
+  background-image: url(svg/home_white_24dp.svg);
 }
 
 .profile {
-    background-image: url(svg/person_outline_white_24dp.svg);
+  background-image: url(svg/person_outline_white_24dp.svg);
 }
 
 .messages {
-    background-image: url(svg/email_white_24dp.svg);
+  background-image: url(svg/email_white_24dp.svg);
 }
 
 .tasks {
-    background-image: url(svg/tasks-open-svgrepo-com.svg);
+  background-image: url(svg/tasks-open-svgrepo-com.svg);
 }
 
 .community {
-    background-image: url(svg/groups_white_24dp.svg);
+  background-image: url(svg/groups_white_24dp.svg);
 }
 
 .settings {
-    background-image: url(svg/settings_white_24dp.svg);
+  background-image: url(svg/settings_white_24dp.svg);
 }
 
 .support {
-    background-image: url(svg/help_outline_white_24dp.svg);
+  background-image: url(svg/help_outline_white_24dp.svg);
 }
 
 .privacy {
-    background-image: url(svg/verified_user_white_24dp.svg);
+  background-image: url(svg/verified_user_white_24dp.svg);
 }
 
 .history {
-    background-image: url(svg/history_white_24dp.svg);
+  background-image: url(svg/history_white_24dp.svg);
 }
 
 .your-projects {
-    grid-area: 1/1/2/2;
+  grid-area: 1/1/2/2;
 }
 
 .announcements-and-trending {
-    grid-area: 1/2/2/3;
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-    gap: 20px 0;
-    align-content: start;
+  grid-area: 1/2/2/3;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 20px 0;
+  align-content: start;
 }
 
 .announcements {
-    grid-area: 1/1/2/2;
+  grid-area: 1/1/2/2;
 }
 
 .trending {
-    grid-area: 2/1/2/3;
+  grid-area: 2/1/2/3;
 }
 
 h2 {
-    margin-bottom: 20px;
-    font-size: clamp(1vw, 1.5em, 2.2rem);
+  margin-bottom: 20px;
+  font-size: clamp(1vw, 1.5em, 2.2rem);
 }
 
 h4 {
-    margin-bottom: 10px;
-    font-size: 1.1em;
+  margin-bottom: 10px;
+  font-size: 1.1em;
 }
 
-.announcements-container, .trending-container {
-    box-shadow: 2px 3px 4px rgb(175, 175, 175);
-    border-radius: 10px;
-    padding: 20px; 
-    background-color: white;
+.announcements-container,
+.trending-container {
+  box-shadow: 2px 3px 4px rgb(175, 175, 175);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
 }
 
 .announcements-container p {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    font-size: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 1rem;
 }
 
 .announcements-container div {
-    padding: 10px;
+  padding: 10px;
 }
 
 .second-announcement {
-    border-top:rgb(255, 190, 10) 2px solid;
-    border-bottom:rgb(130, 15, 161) 2px solid;
+  border-top: rgb(255, 190, 10) 2px solid;
+  border-bottom: rgb(130, 15, 161) 2px solid;
 }
 
 .trending-container li {
-    padding: 20px 0 20px 4.2rem;
-    list-style: none;
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 3.5rem;
-    font-size: 1.15rem;
-    font-weight: bolder;
+  padding: 20px 0 20px 4.2rem;
+  list-style: none;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 3.5rem;
+  font-size: 1.15rem;
+  font-weight: bolder;
 }
 
 .trending-container li span {
-    color:grey;
-    font-weight: lighter;
+  color: grey;
+  font-weight: lighter;
 }
 
 .john {
-    background-image: url(svg/china-monument-svgrepo-com.svg);
+  background-image: url(svg/china-monument-svgrepo-com.svg);
 }
 
 .latifa {
-    background-image: url(svg/female-svgrepo-com.svg);
+  background-image: url(svg/female-svgrepo-com.svg);
 }
 
 .steve {
-    background-image: url(svg/soccer-player-svgrepo-com.svg);
+  background-image: url(svg/soccer-player-svgrepo-com.svg);
 }
 
 .zhang {
-    background-image: url(svg/scroll-chinese-svgrepo-com.svg);
+  background-image: url(svg/scroll-chinese-svgrepo-com.svg);
 }
 
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 20px;
 }
 
-.projects-container>div {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 2px 3px 4px rgb(175, 175, 175);
-    padding: 30px;
-    display: grid;
-    gap: 10px;
-    border-left: rgb(255, 190, 10) 7px solid;
+.projects-container > div {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 3px 4px rgb(175, 175, 175);
+  padding: 30px;
+  display: grid;
+  gap: 10px;
+  border-left: rgb(255, 190, 10) 7px solid;
 }
 
 .projects-container h3 {
-    font-size: 1.2em;
-    margin-bottom:15px;
+  font-size: 1.2em;
+  margin-bottom: 15px;
 }
 
 .projects-container p {
-    font-size: 1.1rem;
-    align-self: start;
+  font-size: 1.1rem;
+  align-self: start;
 }
 
-.projects-container .card-text+div {
-    display: flex;
-    justify-content: end;
-    align-self: end;
+.projects-container .card-text + div {
+  display: flex;
+  justify-content: end;
+  align-self: end;
 }
 
-.projects-container p+div img {
-    height: 1.5rem;
+.projects-container p + div img {
+  height: 1.5rem;
 }
